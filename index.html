@@ -42,7 +42,7 @@
         </nav>
         <address class="header-contacts">
           <ul class="header-contacts-list">
-            <li class="header-contact-list">
+            <li class="header-contacts-item">
               <a class="header-contact-links" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
@@ -54,22 +54,28 @@
             </li>
           </ul>
         </address>
+        <button class="header-burger-button">
+          <svg class="header-burger-icon" width="18" height="16">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!--Main content-->
+
     <main>
       <!--hero section-->
-      <section class="hero section">
-        <div class="container">
+      <section class="hero-section">
+        <div class="container hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
       </section>
 
       <!--Advantages section-->
-      <section class="advantages section">
-        <div class="container">
+      <section class="advantages-section">
+        <div class="container advantages">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-menu">
             <li class="advantages-menu-item">
@@ -125,7 +131,7 @@
       </section>
 
       <!--Team section-->
-      <section class="team section">
+      <section class="team-section hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -302,7 +308,7 @@
       </section>
 
       <!--Portfolio Section-->
-      <section class="portfolio section">
+      <section class="portfolio-section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -426,7 +432,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-container-text">
           <a class="footer-logo" href="./index.html"
@@ -493,7 +499,7 @@
     </footer>
 
     <!-----------Modal-------------->
-    <div class="modal-backdrop-hidden">
+    <div class="modal-backdrop-hidden hidden">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-icon" width="8" height="8">
