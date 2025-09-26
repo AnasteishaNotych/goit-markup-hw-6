@@ -201,13 +201,13 @@ img {
 
 /* -------Hero------- */
 .hero {
+  background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/hero-mob-1x.jpg);
   margin: 0 auto;
-  background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1031,8 +1031,8 @@ img {
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
-  .header-logo {
-    margin-right: 76px;
+  .header-navigation {
+    gap: 76px;
   }
 
   .header-contacts-list {
@@ -1042,6 +1042,7 @@ img {
 
   .header-contact-links {
     letter-spacing: 0.02em;
+    font-size: 16px;
   }
 
   /* -------Hero desktop version------- */
