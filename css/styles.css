@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-  max-width: 352px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -127,7 +127,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #e7e9fc;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .menu-close-icon {
@@ -156,7 +157,7 @@ img {
   color: #404bbf;
 }
 
-.mobile-adress-list {
+.mobile-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -172,6 +173,11 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
+}
+
+.mobile-address-current {
+  color: #4d5ae5;
 }
 
 .mobile-social-list {
@@ -212,7 +218,8 @@ img {
   background-position: center;
   background-size: cover;
   color: #ffffff;
-  padding: 72px 52px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-resolution: 2x) {
@@ -232,7 +239,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   margin: 0 auto;
-  width: 216px;
+  max-width: 216px;
   margin-bottom: 72px;
 }
 
@@ -336,21 +343,14 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px;
   width: 264px;
-  height: 428px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
   max-width: 264px;
   height: 428px;
 }
 
 .team-item-text {
-  padding: 0px 16px;
+  padding: 32px 16px;
 }
 
 .team-name {
@@ -469,6 +469,9 @@ img {
 }
 
 .footer-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-logo {
@@ -814,6 +817,11 @@ img {
   }
 
   /* -------Header tablet version------- */
+  .header-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .header-navigation {
     font-weight: 500;
     color: #2e2f42;
@@ -886,7 +894,8 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-tab-1x.jpg);
-    padding: 112px 136px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   @media screen and (min-resolution: 2x) {
@@ -900,7 +909,7 @@ img {
   }
 
   .hero-title {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 36px;
     font-size: 56px;
   }
@@ -954,6 +963,7 @@ img {
   }
 
   .footer-container-text {
+    align-items: flex-start;
   }
 
   .footer-text {
@@ -1190,7 +1200,7 @@ img {
   .footer-container {
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding-left: 0;
+    padding-left: 15px;
     column-gap: 0;
     row-gap: 0;
   }
